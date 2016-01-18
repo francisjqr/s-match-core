@@ -44,6 +44,13 @@ public interface IBaseNode<E extends IBaseNode, I extends IBaseNodeData> extends
     List<E> getChildren();
 
     /**
+     * Returns a modifiable list of children.
+     *
+     * @return modifiable list of children
+     */
+    List<E> getModifiableChildren();
+
+    /**
      * Sets list of children.
      *
      * @param children new list of children

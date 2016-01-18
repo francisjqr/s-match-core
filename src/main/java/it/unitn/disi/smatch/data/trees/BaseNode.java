@@ -205,6 +205,16 @@ public class BaseNode<E extends IBaseNode, I extends IBaseNodeData> extends Inde
         }
     }
 
+    @Override
+    public List<E> getModifiableChildren() {
+        if (null != children) {
+            return children;
+        } else {
+            return Collections.emptyList();
+        }
+    }
+
+    @Override
     public void setChildren(List<E> children) {
         this.children = children;
     }

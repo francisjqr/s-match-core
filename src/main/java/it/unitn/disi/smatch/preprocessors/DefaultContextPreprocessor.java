@@ -123,9 +123,10 @@ public class DefaultContextPreprocessor extends BaseContextPreprocessor implemen
      */
     @Override
     public void preprocess(IContext context) throws ContextPreprocessorException {
-        if (0 == getTotal()) {
-            setTotal(4 * context.nodesCount());
-        }
+        // if (0 == getTotal()) {
+        setTotal(4 * context.nodesCount());
+        //}
+        setProgress(0);
         Set<String> unrecognizedWords = new HashSet<>();
 
         context = buildCLabs(context, unrecognizedWords);
@@ -525,6 +526,7 @@ public class DefaultContextPreprocessor extends BaseContextPreprocessor implemen
         }
         // assign formula to the node
         node.nodeData().setLabelFormula(formulaOfConcept.toString());
+        log.info(node.nodeData().getName() + " => " + formulaOfConcept.toString());
     }
 
     /**
