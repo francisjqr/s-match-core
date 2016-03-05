@@ -14,15 +14,15 @@
     <description>S-Match is a framework for semantic matching algorithms.</description>
 
     <scm>
-        <connection>scm:git:https://github.com/s-match/s-match-core.git</connection>
+        <connection>scm:git:https://github.com/francisjqr/s-match-core.git</connection>
         <developerConnection>scm:git:git@github.com:s-match/s-match-core.git</developerConnection>
-        <url>https://github.com/s-match/s-match-core</url>
+        <url>https://github.com/francisjqr/s-match-core</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
         <system>Github</system>
-        <url>https://github.com/s-match/s-match-core/issues</url>
+        <url>https://github.com/francisjqr/s-match-core/issues</url>
     </issueManagement>
 
     <dependencies>
